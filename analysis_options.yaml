@@ -10,19 +10,47 @@
 include: package:flutter_lints/flutter.yaml
 
 linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at https://dart.dev/lints.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
   rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    # avoid_print: 코드에서 print() 함수 사용을 지양하고, 대신 로깅 등을 활용하도록 권장합니다.
+    avoid_print: true
+    # prefer_const_constructors: 상수 생성자를 사용할 수 있을 때 const를 사용하도록 합니다.
+    prefer_const_constructors: true
+    # prefer_const_literals_to_create_immutables: 불변 객체를 생성할 때 const 리터럴 사용을 권장합니다.
+    prefer_const_literals_to_create_immutables: true
+    # prefer_final_locals: 지역 변수를 final로 선언할 수 있으면 final을 사용하도록 권장합니다.
+    prefer_final_locals: true
+    # always_declare_return_types: 함수나 메서드에 항상 명시적으로 반환 타입을 선언하도록 합니다.
+    always_declare_return_types: true
+    # require_trailing_commas: 컬렉션, 파라미터 등 여러 줄에 걸친 구조에서 마지막 요소 뒤에 쉼표를 추가하도록 권장합니다.
+    require_trailing_commas: true
+    # avoid_unnecessary_containers: 불필요한 Container 위젯 사용을 피하도록 권장합니다.
+    avoid_unnecessary_containers: true
+    # use_key_in_widget_constructors: 위젯 생성자에 Key 파라미터를 추가하도록 권장합니다.
+    use_key_in_widget_constructors: true
+    # prefer_const_declarations: 상수를 const로 선언할 수 있을 때 const 선언을 사용하도록 권장합니다.
+    prefer_const_declarations: true
+    # avoid_redundant_argument_values: 생략해도 되는 기본값 파라미터를 명시적으로 지정하는 것을 피합니다.
+    avoid_redundant_argument_values: true
+    # unnecessary_this: this 사용이 불필요한 경우 사용하지 않도록 권장합니다.
+    unnecessary_this: true
+    # avoid_init_to_null: 변수 초기화 때 null로 명시적으로 초기화하지 않도록 합니다.
+    avoid_init_to_null: true
+    # prefer_expression_function_bodies: 단일 표현식 함수에는 본문 대신 화살표(=>) 표현을 사용합니다.
+    prefer_expression_function_bodies: true
+    # avoid_dynamic_calls: dynamic 타입 객체에서 직접 메서드 또는 프로퍼티에 접근하지 않도록 권장합니다.
+    avoid_dynamic_calls: true
+    # use_build_context_synchronously: 비동기 작업 후 BuildContext를 즉시 사용하도록 주의합니다.
+    use_build_context_synchronously: true
+    # avoid_returning_null_for_void: void를 반환하는 함수에서 null을 반환하지 않도록 합니다.
+    avoid_returning_null_for_void: true
+    # sized_box_for_whitespace: 레이아웃 공백에는 SizedBox를 사용하고, Container로만 만든 공백을 피하도록 합니다.
+    sized_box_for_whitespace: true
+    # prefer_single_quotes: 문자열에는 홑따옴표(')를 사용하는 것을 권장합니다.
+    prefer_single_quotes: true
+    # avoid_unused_constructor_parameters: 생성자에서 사용되지 않는 파라미터를 받지 않도록 합니다.
+    avoid_unused_constructor_parameters: true
+    # cascade_invocations: 연속적인 메서드/프로퍼티 호출은 cascade(..) 연산자( .. )를 사용하도록 권장합니다.
+    cascade_invocations: true
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options

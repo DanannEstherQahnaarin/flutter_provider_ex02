@@ -34,21 +34,45 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
+  # 상태 관리 라이브러리
+  # - Riverpod: 선언적 상태 관리 라이브러리
+  # - flutter_riverpod: Flutter 위젯과 Riverpod 통합
+  # - riverpod_annotation: 코드 생성 기반 Provider 어노테이션
+  # 사용 위치: lib/provider/
   riverpod: ^3.1.0
   flutter_riverpod: ^3.1.0
   riverpod_annotation: ^4.0.0
+
+  # 로깅 라이브러리
+  # - logger: 구조화된 로깅 기능 제공
+  # - 로그 레벨: Debug, Info, Warning, Error, Fatal
+  # - 콘솔 출력 및 파일 저장 지원
+  # - 타임스탬프 및 스택 트레이스 자동 포함
+  # 사용 위치: lib/provider/, lib/service/, lib/utils/
+  logger: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  # 코드 품질
+  # - flutter_lints: Flutter 권장 린트 규칙 세트
+  # - 코드 품질 향상을 위한 린트 규칙 제공
+  # - analysis_options.yaml에서 활성화됨
   flutter_lints: ^6.0.0
+
+  # 코드 생성
+  # - riverpod_generator: Riverpod Provider 코드 생성 도구
+  # - @riverpod 어노테이션 기반 코드 생성
+  # - build_runner와 함께 사용
   riverpod_generator: ^4.0.0+1
+
+  # 빌드 러너
+  # - build_runner: 코드 생성 실행 도구
+  # - Riverpod Provider 코드 생성 실행
+  # - 사용 명령어: dart run build_runner build --delete-conflicting-outputs
+  build_runner: ^2.4.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
